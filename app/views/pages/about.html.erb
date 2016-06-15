@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TestApp</title>
+</head>
+<style>
+  #header {
+    background-color: #980000;
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+  }
+  
+  li{
+    float: left;
+  }
+  
+   li a{
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active){
+    background-color:#993333;
+    color: white;
+  }
+  
+  li a.active{
+    color:white;
+    background-color: #993333;
+  }  
+  
+  #para{
+    color: gray;
+    position: relative;
+  }
+  
+  
+  #footer {
+    background-color:red;
+    color:white;
+    clear:both;
+    text-align:center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+</style>
+<body>
+
+<ul>
+  <li class = "active"><%= link_to 'Home', root_path %></li>
+  <li><%= link_to 'About', about_path %></li>
+</ul>
+
+<div id = "header">
+  <h1>
+    Alpha Blog
+  </h1>
+</div>
+
+<div id = para><p>
+  About Page
+</p>
+</div>
+
+
+<div id="footer">
+Copyright © KJones
+</div>
+
+</body>
+</html>
